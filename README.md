@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Shigari Mobile World Website
 
 Static, hosting-ready website for **Shigari Mobile World** (Gilgit-Baltistan, GB).
@@ -53,3 +54,7 @@ Then open:
 - **Netlify**: drag-and-drop this folder or connect your repo.
 
 No build step required.
+=======
+# Mobile-Shope-Web-page
+# Naseem-shigari
+>>>>>>> d5b82fd59eb7d84e970556fe1ef3b603974d760e
