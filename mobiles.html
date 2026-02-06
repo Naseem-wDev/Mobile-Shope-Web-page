@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#0B1B3A" />
+
+  <title>Mobiles — Shigari Mobile World (Gilgit-Baltistan)</title>
+  <meta name="description" content="Browse original, PTA-approved mobiles at Shigari Mobile World. Search by brand, price, and category (Flagship, Mid-Range, Budget)." />
+
+  <link rel="icon" href="assets/img/gb-logo.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Shigari Mobile World Home">
+        <img src="assets/img/gb-logo.svg" alt="GB logo" class="brand-logo" width="44" height="44" />
+        <div class="brand-text">
+          <div class="brand-name">Shigari Mobile World</div>
+          <div class="brand-tag">Feels big and professional.</div>
+        </div>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a class="active" href="mobiles.html">Mobiles</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="nav-cta" href="#catalog">Browse Mobiles</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-label="Open menu" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <div class="mobile-nav" data-mobile-nav>
+      <a href="mobiles.html">Mobiles</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="#catalog">Browse Mobiles</a>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero-inner">
+        <div>
+          <p class="eyebrow">Search • Filter • WhatsApp Buy Now</p>
+          <h1>Mobiles Catalog</h1>
+          <p class="lead">Original, PTA-approved mobiles — with clear specs and prices in PKR. Confirm stock & final price on WhatsApp.</p>
+        </div>
+        <div class="page-hero-card">
+          <div class="page-hero-card-title">Quick Filters</div>
+          <div class="page-hero-card-sub">Find the right phone fast</div>
+          <div class="pill-row" id="categoryTabs" role="tablist" aria-label="Categories">
+            <button class="pill active" type="button" data-category="all" role="tab">All</button>
+            <button class="pill" type="button" data-category="Flagship" role="tab">Flagship</button>
+            <button class="pill" type="button" data-category="Mid-Range" role="tab">Mid-Range</button>
+            <button class="pill" type="button" data-category="Budget" role="tab">Budget</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="catalog">
+      <div class="container">
+        <div class="filters" aria-label="Mobiles filters">
+          <div class="filter">
+            <label for="search">Search</label>
+            <input id="search" type="search" placeholder="Search by brand or model (e.g., iPhone 15, S24, Redmi Note)…" autocomplete="off" />
+          </div>
+
+          <div class="filter">
+            <label for="brand">Brand</label>
+            <select id="brand">
+              <option value="all">All brands</option>
+            </select>
+          </div>
+
+          <div class="filter">
+            <label for="price">Max Price (PKR)</label>
+            <select id="price">
+              <option value="all">Any</option>
+              <option value="50000">Up to 50,000</option>
+              <option value="80000">Up to 80,000</option>
+              <option value="120000">Up to 120,000</option>
+              <option value="180000">Up to 180,000</option>
+              <option value="250000">Up to 250,000</option>
+              <option value="350000">Up to 350,000</option>
+            </select>
+          </div>
+
+          <div class="filter filter-actions">
+            <button class="btn btn-soft" type="button" id="resetFilters">Reset</button>
+            <a class="btn btn-primary" href="#" data-whatsapp-link data-whatsapp-message="Assalam o Alaikum! Please share today’s best deals in GB (PTA-approved).">Ask for Deals</a>
+          </div>
+        </div>
+
+        <div class="results-bar">
+          <div class="results-count" id="resultsCount">Loading…</div>
+          <div class="results-note">Tip: Tap “Buy Now” to auto-send model & price on WhatsApp.</div>
+        </div>
+
+        <div class="mobile-grid" id="mobilesGrid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="footer-brand-row">
+          <img src="assets/img/gb-logo.svg" alt="GB logo" width="40" height="40" />
+          <div>
+            <div class="footer-title">Shigari Mobile World</div>
+            <div class="footer-sub">Original Mobiles • Best Prices • GB Trusted Shop</div>
+          </div>
+        </div>
+        <p class="footer-note">Serving Gilgit-Baltistan with verified devices and honest service.</p>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-h">Quick Links</div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-h">Working Hours</div>
+        <div class="footer-text">Mon – Sat: 10:00 AM – 9:00 PM</div>
+        <div class="footer-text">Sunday: 2:00 PM – 9:00 PM</div>
+      </div>
+
+      <div class="footer-col">
+        <div class="footer-h">Contact</div>
+        <div class="footer-text" data-shop-phone></div>
+        <div class="footer-text"><a href="#" data-whatsapp-link data-whatsapp-message="Assalam o Alaikum! I want to buy a mobile.">WhatsApp</a></div>
+        <div class="footer-text" data-shop-email></div>
+        <div class="footer-text">Mobile Market, Shigar / Skardu, Gilgit-Baltistan</div>
+      </div>
+    </div>
+
+    <div class="container footer-bottom">
+      <div>© <span data-year></span> Shigari Mobile World. All rights reserved.</div>
+      <div class="footer-social">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="TikTok">TikTok</a>
+      </div>
+    </div>
+  </footer>
+
+  <a class="whatsapp-float" href="#" aria-label="Chat on WhatsApp" data-whatsapp-link data-whatsapp-message="Assalam o Alaikum! I want to buy a mobile.">
+    <span class="wa-icon" aria-hidden="true"></span>
+    <span class="wa-text">WhatsApp</span>
+  </a>
+
+  <script src="assets/js/site.js"></script>
+  <script src="assets/js/mobiles.js"></script>
+</body>
+</html>
